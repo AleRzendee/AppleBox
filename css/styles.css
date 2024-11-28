@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #abb3ec;
+}
+
+.text {
+    display: inline-block;
+    position: relative;
+    margin-top: 80px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    background-color: #f3f1f1;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #000;
+    font-family: "Inter", sans-serif;
+    font-size: medium;
+    font-weight: 500;
+}
+
+.links a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.iphone {
+    position: relative;
+    width: 230px;
+    height: 410px;
+    background: url(../images/iPhone-12.jpg) #fff;
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: rotate(-40deg) skew(20deg, 10deg);
+    box-shadow: -120px 110px 5px rgba(0, 0, 0, 0.253);
+    transition: 0.5s;
+}
+
+.iphone:hover {
+    transform: rotate(-40deg) skew(20deg, 10deg) translate(50px, -50px);
+    box-shadow: -150px 140px 20px rgba(0, 0, 0, 0.253);
+}
+
+.iphone::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -90px;
+    width: 90px;
+    height: 100%;
+    background: url(../images/text.png) #f2f2f2;
+    background-size: 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform-origin: right;
+    transform: skewY(-43deg);
+}
+
+.iphone::after {
+    content: '';
+    position: absolute;
+    bottom: -82px;
+    left: -45px;
+    width: 100%;
+    height: 82px;
+    background: url(../images/logo-apple.png) #f3f1f1;
+    background-size: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform-origin: right;
+    transform: skewX(-48deg);
+}
