@@ -10,4 +10,4 @@
 </ul>
 <hr>
 <h3>How reach me?</h3>
-<span><a href="https://www.instagram.com/rzendeee/">Just click here</a>and you will find.</span>
+<span><a href="https://www.instagram.com/rzendeee/">Just click here</a> and you will find.</span>
